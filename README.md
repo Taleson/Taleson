@@ -5,9 +5,9 @@
 
 # Taleson
 
-**A structured story editor for interactive narratives**
+**A story editor that makes writing game-ready JSON easy**
 
-Build branching storylines, dialogue trees, and game scripts with a visual node-based editor.
+No coding needed. Just write your story, connect the scenes, and export.
 
 [![Download](https://img.shields.io/github/v/release/Taleson/Taleson?label=Download&style=for-the-badge)](https://github.com/Taleson/Taleson/releases)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#license)

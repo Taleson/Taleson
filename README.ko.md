@@ -5,9 +5,9 @@
 
 # Taleson
 
-**인터랙티브 내러티브를 위한 구조화된 스토리 에디터**
+**스토리용 JSON을 쉽게 만드는 에디터**
 
-비주얼 노드 기반 에디터로 분기 스토리라인, 대화 트리, 게임 스크립트를 제작하세요.
+코딩 없이 스토리를 쓰고, 장면을 연결하고, 바로 내보내세요.
 
 [![다운로드](https://img.shields.io/github/v/release/Taleson/Taleson?label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C&style=for-the-badge)](https://github.com/Taleson/Taleson/releases)
 [![라이선스](https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-All%20Rights%20Reserved-red?style=for-the-badge)](#라이선스)
