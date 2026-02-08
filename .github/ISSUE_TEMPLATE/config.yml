@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Discussion
+    url: https://github.com/Taleson/Taleson/discussions
+    about: Ask questions, share ideas, or just chat about Taleson.
+  - name: Q&A
+    url: https://github.com/Taleson/Taleson/discussions/categories/q-a
+    about: Get help with using Taleson.
