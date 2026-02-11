@@ -27,6 +27,26 @@ Taleson is a desktop application for writing structured stories as JSON data. Wh
 
 Every aspect of your project is **configuration-driven** -- column layouts, node types, and field behaviors are all defined by your project settings, not hardcoded.
 
+### Demo Limitations
+
+The demo version has the following resource limits:
+
+| Resource | Demo | Full Version |
+|----------|------|--------------|
+| Chapters | 2 | Unlimited |
+| Nodes per chapter | 10 | Unlimited |
+| Lines per node | 15 | Unlimited |
+| Variables | 3 | Unlimited |
+| Resources (per type) | 3 each | Unlimited |
+
+- Only **creation/addition** is restricted. Reading existing data has no limits.
+- A message is shown when a limit is reached -- nothing is silently ignored.
+- **Existing data is never deleted or corrupted** by the demo restrictions.
+
+> **Warning -- JSON contamination risk**
+>
+> The demo works with the same JSON project files as the full version. If you plan to edit demo project files externally (scripts, tools, or manual edits), **back up the original JSON files first**. If you notice any data corruption or unexpected changes in your JSON files, **stop immediately and report it** via [Issues](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md) before continuing.
+
 ## Features
 
 ### Story Structures
