@@ -80,11 +80,10 @@ Taleson은 JSON 데이터로 구조화된 스토리를 작성하기 위한 데�
 
 [**Releases**](https://github.com/Taleson/Taleson/releases) 페이지에서 최신 버전을 다운로드하세요.
 
-| 플랫폼 | 형식 |
-|--------|------|
-| Windows | `.exe` 설치파일 |
-| macOS | `.dmg` |
-| Linux | `.AppImage` |
+| 종류 | 파일 | 비고 |
+|------|------|------|
+| **포터블 (추천)** | `Taleson Demo x.x.x.exe` | 설치 불필요. 아직 개발 초기 단계이므로 포터블 사용을 권장합니다. |
+| 설치형 | `Taleson Demo Setup x.x.x.exe` | Windows 설치파일. MCP (AI 연동) 기능을 사용하려면 설치형이 필요합니다. |
 
 ## 스크린샷
 

@@ -80,11 +80,10 @@ The demo version has the following resource limits:
 
 Go to [**Releases**](https://github.com/Taleson/Taleson/releases) to download the latest version.
 
-| Platform | Format |
-|----------|--------|
-| Windows | `.exe` installer |
-| macOS | `.dmg` |
-| Linux | `.AppImage` |
+| Type | File | Note |
+|------|------|------|
+| **Portable (Recommended)** | `Taleson Demo x.x.x.exe` | No installation needed. Recommended while the app is still in early development. |
+| Setup | `Taleson Demo Setup x.x.x.exe` | Windows installer. Required for MCP (AI integration) support. |
 
 ## Screenshots
 
