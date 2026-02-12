@@ -113,15 +113,6 @@ We'd love to hear from you:
 - **Feature Requests** -- [Open an issue](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
 - **General Discussion** -- [Join Discussions](https://github.com/Taleson/Taleson/discussions)
 
-## Planned Integrations
-
-| Engine | Status |
-|--------|--------|
-| RPG Maker MV/MZ | Planned |
-| Ren'Py | Planned |
-| Ink (Unity) | Planned |
-| Yarn Spinner (Unity) | Planned |
-
 ## License
 
 Copyright (c) 2025 Taleson. All rights reserved.
