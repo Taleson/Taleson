@@ -12,7 +12,7 @@ No coding needed. Just write your story, connect the scenes, and export.
 [![Download](https://img.shields.io/github/v/release/Taleson/Taleson?label=Download&style=for-the-badge)](https://github.com/Taleson/Taleson/releases)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#license)
 
-[한국어](README.ko.md)
+[한국어](README.ko.md) | [日本語](README.ja.md) | [中文](README.zh.md)
 
 </div>
 
