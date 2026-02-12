@@ -78,7 +78,7 @@ The demo version has the following resource limits:
 
 ## Download
 
-Go to [**Releases**](https://github.com/Taleson/Taleson/releases) to download the latest version.
+[**Download Demo v1.0.0**](https://github.com/Taleson/Taleson/releases/tag/v1.0.0-demo)
 
 | Type | File | Note |
 |------|------|------|

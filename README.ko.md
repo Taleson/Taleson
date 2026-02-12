@@ -78,7 +78,7 @@ Taleson은 JSON 데이터로 구조화된 스토리를 작성하기 위한 데�
 
 ## 다운로드
 
-[**Releases**](https://github.com/Taleson/Taleson/releases) 페이지에서 최신 버전을 다운로드하세요.
+[**Demo v1.0.0 다운로드**](https://github.com/Taleson/Taleson/releases/tag/v1.0.0-demo)
 
 | 종류 | 파일 | 비고 |
 |------|------|------|
