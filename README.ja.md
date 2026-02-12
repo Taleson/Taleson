@@ -113,15 +113,6 @@ Talesonは、構造化されたストーリーをJSONデータとして作成す
 - **機能リクエスト** -- [Issueを開く](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
 - **一般的な議論** -- [ディスカッションに参加](https://github.com/Taleson/Taleson/discussions)
 
-## 計画中の統合
-
-| エンジン | ステータス |
-|--------|--------|
-| RPG Maker MV/MZ | 計画中 |
-| Ren'Py | 計画中 |
-| Ink (Unity) | 計画中 |
-| Yarn Spinner (Unity) | 計画中 |
-
 ## ライセンス
 
 Copyright (c) 2025 Taleson. All rights reserved.
