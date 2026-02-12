@@ -113,15 +113,6 @@ Taleson是一款用于将结构化故事编写为JSON数据的桌面应用程序
 - **功能请求** -- [提交Issue](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
 - **一般讨论** -- [加入讨论](https://github.com/Taleson/Taleson/discussions)
 
-## 计划集成
-
-| 引擎 | 状态 |
-|--------|--------|
-| RPG Maker MV/MZ | 计划中 |
-| Ren'Py | 计划中 |
-| Ink (Unity) | 计划中 |
-| Yarn Spinner (Unity) | 计划中 |
-
 ## 许可证
 
 Copyright (c) 2025 Taleson. All rights reserved.
