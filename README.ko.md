@@ -113,14 +113,6 @@ Taleson은 구조화된 스토리를 JSON 데이터로 작성하는 데스크톱
 - **기능 요청** -- [이슈 열기](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
 - **일반 토론** -- [토론 참여하기](https://github.com/Taleson/Taleson/discussions)
 
-## 계획된 통합
-
-| 엔진 | 상태 |
-|--------|--------|
-| RPG Maker MV/MZ | 계획됨 |
-| Ren'Py | 계획됨 |
-| Ink (Unity) | 계획됨 |
-| Yarn Spinner (Unity) | 계획됨 |
 
 ## 라이선스
 
