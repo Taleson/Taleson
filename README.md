@@ -27,6 +27,8 @@ Taleson is a desktop application for writing structured stories as JSON data. Wh
 
 Every aspect of your project is **configuration-driven** -- column layouts, node types, and field behaviors are all defined by your project settings, not hardcoded.
 
+**Supported Languages:** English, Korean (한국어), Japanese (日本語), Chinese (中文)
+
 ### Demo Limitations
 
 The demo version has the following resource limits:
@@ -46,6 +48,13 @@ The demo version has the following resource limits:
 > **Warning -- JSON contamination risk**
 >
 > The demo works with the same JSON project files as the full version. If you plan to edit demo project files externally (scripts, tools, or manual edits), **back up the original JSON files first**. If you notice any data corruption or unexpected changes in your JSON files, **stop immediately and report it** via [Issues](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md) before continuing.
+
+### Pricing
+
+- **Demo Version:** Free forever with resource limitations (as listed above)
+- **Full Version:** Coming to Steam Early Access (paid release)
+
+The demo will always remain free. The full version with unlimited features will be available for purchase on Steam.
 
 ## Features
 
