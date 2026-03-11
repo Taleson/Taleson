@@ -1,122 +1,117 @@
 <div align="center">
 
-<!-- TODO: Replace with actual logo -->
-<!-- <img src="docs/screenshots/logo.png" alt="Taleson" width="120" /> -->
-
 # Taleson
 
-**ゲーム用JSONを簡単に作成できるストーリーエディター**
+**ゲーム用JSONストーリーを簡単に作成するエディタ**
 
-コーディング不要。ストーリーを書き、シーンをつなげて、エクスポートするだけ。
+コーディング不要。ストーリーを書いて、シーンをつなげて、エクスポート。
 
-[![Download](https://img.shields.io/github/v/release/Taleson/Taleson?label=Download&style=for-the-badge)](https://github.com/Taleson/Taleson/releases)
-[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#license)
+[![デモダウンロード](https://img.shields.io/badge/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![Steam](https://img.shields.io/badge/%E3%82%A6%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%82%B9%E3%83%88-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
+[![ライセンス](https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-All%20Rights%20Reserved-red?style=for-the-badge)](#ライセンス)
 
-[English](README.md) | [한국어](README.ko.md)
+[English](README.md) | [한국어](README.ko.md) | [中文](README.zh.md)
 
 </div>
 
 ---
 
-<!-- TODO: Add hero screenshot -->
-<!-- ![Taleson Editor](docs/screenshots/editor-overview.png) -->
+> **これは無料デモ版です。** 一部の機能に制限があります。[Steam](https://store.steampowered.com/app/4507640/)で製品版をウィッシュリストに追加して、リリース通知を受け取りましょう。
 
 ## Talesonとは？
 
-Talesonは、構造化されたストーリーをJSONデータとして作成するデスクトップアプリケーションです。ビジュアルノベル、分岐型RPGダイアログ、複雑なインタラクティブナラティブなど、何を作る場合でも、Talesonはストーリーを整理し、視覚化し、エクスポートするツールを提供します。
+Talesonは、JSONデータとして構造化されたストーリーを作成するためのデスクトップアプリケーションです。ビジュアルノベル、分岐型RPGダイアログ、複雑なインタラクティブナラティブなど、あらゆるストーリーを体系的に構成、可視化、エクスポートできます。
 
-プロジェクトのあらゆる側面は**設定駆動型**です -- カラムレイアウト、ノードタイプ、フィールドの動作はすべてプロジェクト設定で定義され、ハードコーディングされていません。
+プロジェクトのすべての要素は**設定駆動型**です。カラムレイアウト、ノードタイプ、フィールドの動作はすべてプロジェクト設定で定義されます。
 
-**対応言語:** English, Korean (한국어), Japanese (日本語), Chinese (中文)
+## スクリーンショット
 
-### デモ版の制限
+| ダッシュボード | リーダービュー |
+|:------------:|:----------:|
+| ![ダッシュボード](docs/screenshots/screenshot_01.png) | ![リーダー](docs/screenshots/screenshot_02.png) |
 
-デモ版には以下のリソース制限があります：
+| コンパクトエディタ | ダイアグラムビュー |
+|:---------------:|:-------------:|
+| ![コンパクト](docs/screenshots/screenshot_03.png) | ![ダイアグラム](docs/screenshots/screenshot_04.png) |
 
-| リソース | デモ | フルバージョン |
-|----------|------|--------------|
-| チャプター | 2個 | 無制限 |
-| チャプターあたりのノード | 10個 | 無制限 |
-| ノードあたりの行 | 15個 | 無制限 |
-| 変数 | 3個 | 無制限 |
-| リソース（タイプごと） | 各3個 | 無制限 |
+| カードエディタ |
+|:----------:|
+| ![カード](docs/screenshots/screenshot_05.png) |
 
-- **作成/追加**のみが制限されます。既存データの読み取りに制限はありません。
-- 制限に達するとメッセージが表示されます -- 何も無視されません。
-- **既存データは決して削除または破損されません**。
-
-> **警告 -- JSON汚染リスク**
->
-> デモ版はフルバージョンと同じJSONプロジェクトファイルを使用します。デモプロジェクトファイルを外部で編集する予定がある場合（スクリプト、ツール、手動編集）、**まず元のJSONファイルをバックアップしてください**。JSONファイルでデータの破損や予期しない変更に気づいた場合は、**すぐに中止し**、[Issues](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md)で報告してから続行してください。
-
-### 価格
-
-- **デモ版：** リソース制限付きの無料版（永久無料）
-- **フルバージョン：** Steam Early Accessで有料リリース予定
-
-デモ版は永久に無料で提供されます。無制限の機能を備えたフルバージョンは、Steamで購入可能になります。
-
-## 機能
+## 主な機能
 
 ### ストーリー構造
 
 | モード | 説明 | 最適な用途 |
-|------|-------------|----------|
-| **Array** | 線形、順次的なノード | シンプルなスクリプト、チュートリアル |
-| **Graph** | 接続のある分岐型ノードツリー | RPGダイアログ、選択ベースのナラティブ |
-| **Graph-Inline** | インライン子ノードを持つグラフ | ビジュアルノベル、会話中心のストーリー |
+|--------|------|-----------|
+| **Array** | 線形・順次ノード | シンプルなスクリプト、チュートリアル |
+| **Graph** | 分岐ノードツリー | RPGダイアログ、選択肢ベースのナラティブ |
+| **Graph-Inline** | インライン子ノード付きグラフ | ビジュアルノベル、会話中心のストーリー |
 
-### エディター
+### エディタ
 
-- ドラッグ&ドロップビジュアルノードエディター
-- ダイアログとナレーションのためのリッチテキスト編集
+- 7つの編集ビュー: カード、コンパクト、ダイアグラム、スクリプト、リーダー、JSON、ドラフト
+- ドラッグ＆ドロップ対応ビジュアルノードエディタ
 - 条件分岐（変数、演算子、値）
-- ノードタイプシステム（ダイアログ、ナレーション、分岐、選択など）
-- プロジェクトごとにカスタマイズ可能なカラムとフィールド
+- ノードタイプシステム（ダイアログ、選択肢、条件、変数、エンディング、カスタムタイプ）
+- プロジェクト別にカスタマイズ可能なカラムとフィールド
+- ストーリー統計ダッシュボード
 
 ### エクスポート
 
-- スタンドアロン読み取り用のHTMLエクスポート
-- ゲームエンジン統合用のJSONデータ
+- HTMLエクスポート（スタンドアロン閲覧用）
+- JSONデータ（ゲームエンジン連携用）
 
-### AI統合（MCP）
+### AI連携（MCP）
 
-- 組み込みMCP（Model Context Protocol）サーバー
-- AIエージェントがストーリーノードを読み取り、作成、変更可能
-- AI支援ストーリー作成ワークフローを実現
+- 内蔵MCP（Model Context Protocol）サーバー
+- AIエージェントがストーリーノードの読み取り、作成、編集に対応
+- 22以上のAIツールと互換（Claude、Cursor、Windsurf、Copilot、JetBrainsなど）
+
+### 多言語対応
+
+- 4言語完全UI対応: 英語、韓国語、日本語、中国語（簡体字）
+- 言語ごとに8つのプロジェクトテンプレート
+
+## デモ版の制限
+
+| 機能 | デモ版 | 製品版 |
+|------|--------|--------|
+| チャプター | 2 | 無制限 |
+| チャプターあたりのノード | 10 | 無制限 |
+| ノードあたりのダイアログ | 15 | 無制限 |
+| 変数 | 3 | 無制限 |
+| タイプあたりのリソース | 3 | 無制限 |
 
 ## ダウンロード
 
-[**デモ v1.0.0 ダウンロード**](https://github.com/Taleson/Taleson/releases/tag/v1.0.0-demo)
+[**Releases**](https://github.com/Taleson/Taleson/releases/latest)ページからデモ版をダウンロードしてください。
 
-| タイプ | ファイル | 注記 |
-|------|------|------|
-| **ポータブル（推奨）** | `Taleson Demo x.x.x.exe` | インストール不要。初期開発段階で推奨。 |
-| セットアップ | `Taleson Demo Setup x.x.x.exe` | Windowsインストーラー。MCP（AI統合）サポートに必要。 |
+| プラットフォーム | 形式 |
+|-----------------|------|
+| Windows | `.exe` インストーラー / ポータブル |
 
-## スクリーンショット
+## ゲームエンジン連携予定
 
-<!-- TODO: Add screenshots when available -->
-<!--
-| ホーム画面 | ノードエディター | グラフビュー |
-|:-----------:|:-----------:|:----------:|
-| ![Home](docs/screenshots/home.png) | ![Editor](docs/screenshots/editor.png) | ![Graph](docs/screenshots/graph.png) |
--->
+| エンジン | ステータス |
+|----------|-----------|
+| RPG Maker MV/MZ | 予定 |
+| Ren'Py | 予定 |
+| Ink (Unity) | 予定 |
+| Yarn Spinner (Unity) | 予定 |
 
-*スクリーンショット準備中。*
+## フィードバック & コミュニティ
 
-## フィードバック＆コミュニティ
+皆さまのご意見をお待ちしています:
 
-皆様のご意見をお聞かせください：
-
-- **バグ報告** -- [Issueを開く](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md)
-- **機能リクエスト** -- [Issueを開く](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
-- **一般的な議論** -- [ディスカッションに参加](https://github.com/Taleson/Taleson/discussions)
+- **バグ報告** -- [Issueを作成](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md)
+- **機能リクエスト** -- [Issueを作成](https://github.com/Taleson/Taleson/issues/new?template=feature_request.md)
+- **自由な議論** -- [Discussionsに参加](https://github.com/Taleson/Taleson/discussions)
 
 ## ライセンス
 
-Copyright (c) 2025 Taleson. All rights reserved.
+Copyright (c) 2025-2026 Taleson. All rights reserved.
 
-本ソフトウェアは独占的なソフトウェアです。著者の事前の書面による許可なく、いかなる媒体を通じても、本ソフトウェアの無断複製、変更、配布、使用は厳しく禁止されています。
+このソフトウェアは独占的ソフトウェアです。著者の事前の書面による許可なく、このソフトウェアを複製、修正、配布、または使用することは厳しく禁止されています。
 
-詳細は[LICENSE](LICENSE)を参照してください。
+詳細は[LICENSE](LICENSE)をご参照ください。

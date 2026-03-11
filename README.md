@@ -1,15 +1,13 @@
 <div align="center">
 
-<!-- TODO: Replace with actual logo -->
-<!-- <img src="docs/screenshots/logo.png" alt="Taleson" width="120" /> -->
-
 # Taleson
 
 **A story editor that makes writing game-ready JSON easy**
 
 No coding needed. Just write your story, connect the scenes, and export.
 
-[![Download](https://img.shields.io/github/v/release/Taleson/Taleson?label=Download&style=for-the-badge)](https://github.com/Taleson/Taleson/releases)
+[![Download Demo](https://img.shields.io/badge/Download-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![Steam](https://img.shields.io/badge/Wishlist-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#license)
 
 [한국어](README.ko.md) | [日本語](README.ja.md) | [中文](README.zh.md)
@@ -18,8 +16,7 @@ No coding needed. Just write your story, connect the scenes, and export.
 
 ---
 
-<!-- TODO: Add hero screenshot -->
-<!-- ![Taleson Editor](docs/screenshots/editor-overview.png) -->
+> **This is a free demo.** Some features have limits. Wishlist the full version on [Steam](https://store.steampowered.com/app/4507640/) to get notified on release.
 
 ## What is Taleson?
 
@@ -27,34 +24,19 @@ Taleson is a desktop application for writing structured stories as JSON data. Wh
 
 Every aspect of your project is **configuration-driven** -- column layouts, node types, and field behaviors are all defined by your project settings, not hardcoded.
 
-**Supported Languages:** English, Korean (한국어), Japanese (日本語), Chinese (中文)
+## Screenshots
 
-### Demo Limitations
+| Dashboard | Reader View |
+|:---------:|:-----------:|
+| ![Dashboard](docs/screenshots/screenshot_01.png) | ![Reader](docs/screenshots/screenshot_02.png) |
 
-The demo version has the following resource limits:
+| Compact Editor | Diagram View |
+|:--------------:|:------------:|
+| ![Compact](docs/screenshots/screenshot_03.png) | ![Diagram](docs/screenshots/screenshot_04.png) |
 
-| Resource | Demo | Full Version |
-|----------|------|--------------|
-| Chapters | 2 | Unlimited |
-| Nodes per chapter | 10 | Unlimited |
-| Lines per node | 15 | Unlimited |
-| Variables | 3 | Unlimited |
-| Resources (per type) | 3 each | Unlimited |
-
-- Only **creation/addition** is restricted. Reading existing data has no limits.
-- A message is shown when a limit is reached -- nothing is silently ignored.
-- **Existing data is never deleted or corrupted** by the demo restrictions.
-
-> **Warning -- JSON contamination risk**
->
-> The demo works with the same JSON project files as the full version. If you plan to edit demo project files externally (scripts, tools, or manual edits), **back up the original JSON files first**. If you notice any data corruption or unexpected changes in your JSON files, **stop immediately and report it** via [Issues](https://github.com/Taleson/Taleson/issues/new?template=bug_report.md) before continuing.
-
-### Pricing
-
-- **Demo Version:** Free forever with resource limitations (as listed above)
-- **Full Version:** Coming to Steam Early Access (paid release)
-
-The demo will always remain free. The full version with unlimited features will be available for purchase on Steam.
+| Card Editor |
+|:-----------:|
+| ![Card](docs/screenshots/screenshot_05.png) |
 
 ## Features
 
@@ -68,11 +50,12 @@ The demo will always remain free. The full version with unlimited features will 
 
 ### Editor
 
+- 7 editing views: Card, Compact, Diagram, Script, Reader, JSON, Draft
 - Visual node editor with drag-and-drop
-- Rich text editing for dialogue and narration
 - Conditional branching (variables, operators, values)
-- Node type system (dialogue, narration, branch, choice, and more)
+- Node type system (dialogue, choice, condition, variable, end, and custom types)
 - Customizable columns and fields per project
+- Story statistics dashboard
 
 ### Export
 
@@ -83,27 +66,39 @@ The demo will always remain free. The full version with unlimited features will 
 
 - Built-in MCP (Model Context Protocol) server
 - AI agents can read, create, and modify story nodes
-- Enables AI-assisted story writing workflows
+- Compatible with 22+ AI tools (Claude, Cursor, Windsurf, Copilot, JetBrains, and more)
+
+### Internationalization
+
+- Full UI support for 4 languages: English, Korean, Japanese, Chinese (Simplified)
+- 8 project templates per language
+
+## Demo Limitations
+
+| Feature | Demo | Full Version |
+|---------|------|--------------|
+| Chapters | 2 | Unlimited |
+| Nodes per chapter | 10 | Unlimited |
+| Dialogues per node | 15 | Unlimited |
+| Variables | 3 | Unlimited |
+| Resources per type | 3 | Unlimited |
 
 ## Download
 
-[**Download Demo v1.0.0**](https://github.com/Taleson/Taleson/releases/tag/v1.0.0-demo)
+Go to [**Releases**](https://github.com/Taleson/Taleson/releases/latest) to download the demo.
 
-| Type | File | Note |
-|------|------|------|
-| **Portable (Recommended)** | `Taleson Demo x.x.x.exe` | No installation needed. Recommended while the app is still in early development. |
-| Setup | `Taleson Demo Setup x.x.x.exe` | Windows installer. Required for MCP (AI integration) support. |
+| Platform | Format |
+|----------|--------|
+| Windows | `.exe` installer / portable |
 
-## Screenshots
+## Planned Engine Integrations
 
-<!-- TODO: Add screenshots when available -->
-<!--
-| Home Screen | Node Editor | Graph View |
-|:-----------:|:-----------:|:----------:|
-| ![Home](docs/screenshots/home.png) | ![Editor](docs/screenshots/editor.png) | ![Graph](docs/screenshots/graph.png) |
--->
-
-*Screenshots coming soon.*
+| Engine | Status |
+|--------|--------|
+| RPG Maker MV/MZ | Planned |
+| Ren'Py | Planned |
+| Ink (Unity) | Planned |
+| Yarn Spinner (Unity) | Planned |
 
 ## Feedback & Community
 
@@ -115,7 +110,7 @@ We'd love to hear from you:
 
 ## License
 
-Copyright (c) 2025 Taleson. All rights reserved.
+Copyright (c) 2025-2026 Taleson. All rights reserved.
 
 This software is proprietary. Unauthorized copying, modification, distribution, or use of this software, via any medium, is strictly prohibited without prior written permission from the author.
 

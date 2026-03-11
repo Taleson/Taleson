@@ -5,6 +5,17 @@ All notable changes to Taleson will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.3] - 2026-03-11
+
+### Fixed
+- **BLOCKER**: Config save now aborts on validation failure instead of writing corrupt data
+- Bridge-level demo guards added for node duplication and insertion (defense-in-depth)
+- IPC response channel IDs replaced with crypto.randomUUID() for collision resistance
+- Removed hardcoded engine field; language now derived from i18n runtime
+- Ending type dropdown options internationalized across all 4 locales
+- ScriptEditor dev banner and error handler context strings internationalized
+- Missing i18n keys added to all locale files (en, ko, ja, zh-CN)
+
 ## [1.0.2] - 2026-02-28
 
 ### Added
