@@ -6,7 +6,7 @@
 
 코딩 없이 스토리를 쓰고, 장면을 연결하고, 바로 내보내세요.
 
-[![데모 다운로드](https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![데모 다운로드](https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-Demo%20v1.0.4-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
 [![Steam](https://img.shields.io/badge/%EC%B0%9C%ED%95%98%EA%B8%B0-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
 [![라이선스](https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-All%20Rights%20Reserved-red?style=for-the-badge)](#라이선스)
 
@@ -46,7 +46,7 @@ Taleson은 JSON 데이터로 구조화된 스토리를 작성하기 위한 데�
 |------|------|------------|
 | **Array** | 선형, 순차적 노드 | 단순 스크립트, 튜토리얼 |
 | **Graph** | 분기형 노드 트리 | RPG 대화, 선택지 기반 내러티브 |
-| **Graph-Inline** | 인라인 자식 노드가 있는 그래프 | 비주얼 노벨, 대화 중심 스토리 |
+| **Graph-Inline** | 노드 대사를 기본으로, 선택지에 인라인 반응을 겹치는 구조 | 비주얼 노벨, 대화 중심 스토리 |
 
 ### 에디터
 
@@ -59,14 +59,17 @@ Taleson은 JSON 데이터로 구조화된 스토리를 작성하기 위한 데�
 
 ### 내보내기
 
-- HTML 내보내기 (독립 실행형 리딩)
-- JSON 데이터 (게임 엔진 연동)
+- 게임 스크립트 내보내기: Ren'Py (`.rpy`), Ink (`.ink`), Yarn Spinner (`.yarn`), Dialogic 2 (`.dtl`), Naninovel (`.nani`)
+- 문서 내보내기: HTML, Markdown, Word (`.docx`), Excel (`.xlsx`)
+- JSON 데이터 (게임 엔진 연동 및 커스텀 파이프라인용)
 
 ### AI 연동 (MCP)
 
 - 내장 MCP (Model Context Protocol) 서버
 - AI 에이전트가 스토리 노드를 읽고, 생성하고, 수정 가능
-- 22개 이상의 AI 도구 호환 (Claude, Cursor, Windsurf, Copilot, JetBrains 등)
+- 패키지된 Taleson만으로 로컬 MCP 서버를 실행할 수 있어 별도 Node.js 설치가 필요 없음
+- 설정 탭에서 툴별 MCP 설정 스니펫을 생성할 수 있고, 포터블 실행 파일 경로도 직접 지정 가능
+- Claude Desktop, Cursor, VS Code (Copilot), Windsurf, Google Antigravity, Claude Code, OpenAI Codex CLI, OpenAI Codex App, Gemini CLI용 안내를 기본 제공
 
 ### 다국어 지원
 
@@ -91,14 +94,15 @@ Taleson은 JSON 데이터로 구조화된 스토리를 작성하기 위한 데�
 |--------|------|
 | Windows | `.exe` 설치파일 / 포터블 |
 
-## 게임 엔진 연동 계획
+## 제공 중인 툴 템플릿 및 내보내기 대상
 
-| 엔진 | 상태 |
-|------|------|
-| RPG Maker MV/MZ | 예정 |
-| Ren'Py | 예정 |
-| Ink (Unity) | 예정 |
-| Yarn Spinner (Unity) | 예정 |
+| 툴 | 템플릿 | 내보내기 |
+|------|---------|----------|
+| Ren'Py | 제공 | `.rpy` |
+| Ink | 제공 | `.ink` |
+| Yarn Spinner | 제공 | `.yarn` |
+| Dialogic 2 | 제공 | `.dtl` |
+| Naninovel | 제공 | `.nani` |
 
 ## 피드백 & 커뮤니티
 

@@ -6,7 +6,7 @@
 
 无需编程。编写故事、连接场景、直接导出。
 
-[![下载试玩版](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![下载试玩版](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD-Demo%20v1.0.4-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
 [![Steam](https://img.shields.io/badge/%E6%84%BF%E6%9C%9B%E5%8D%95-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
 [![许可证](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-All%20Rights%20Reserved-red?style=for-the-badge)](#许可证)
 
@@ -46,7 +46,7 @@ Taleson是一款用于将结构化故事编写为JSON数据的桌面应用程序
 |------|------|---------|
 | **Array** | 线性、顺序节点 | 简单脚本、教程 |
 | **Graph** | 分支节点树 | RPG对话、选择式叙事 |
-| **Graph-Inline** | 带内联子节点的图 | 视觉小说、对话密集型故事 |
+| **Graph-Inline** | 以节点台词为主，并在选项上叠加内联反应的结构 | 视觉小说、对话密集型故事 |
 
 ### 编辑器
 
@@ -59,14 +59,17 @@ Taleson是一款用于将结构化故事编写为JSON数据的桌面应用程序
 
 ### 导出
 
-- HTML导出（独立阅读）
-- JSON数据（游戏引擎集成）
+- 游戏脚本导出：Ren'Py (`.rpy`)、Ink (`.ink`)、Yarn Spinner (`.yarn`)、Dialogic 2 (`.dtl`)、Naninovel (`.nani`)
+- 文档导出：HTML、Markdown、Word (`.docx`)、Excel (`.xlsx`)
+- JSON数据（用于游戏引擎集成和自定义流程）
 
 ### AI集成（MCP）
 
 - 内置MCP（Model Context Protocol）服务器
 - AI代理可以读取、创建和修改故事节点
-- 兼容22+种AI工具（Claude、Cursor、Windsurf、Copilot、JetBrains等）
+- 打包后的 Taleson 可直接作为本地 MCP 服务器使用，无需额外安装 Node.js
+- 设置页可生成面向不同客户端的 MCP 配置片段，并支持覆盖便携版可执行文件路径
+- 内置面向 Claude Desktop、Cursor、VS Code (Copilot)、Windsurf、Google Antigravity、Claude Code、OpenAI Codex CLI、OpenAI Codex App 与 Gemini CLI 的设置指引
 
 ### 多语言支持
 
@@ -91,14 +94,15 @@ Taleson是一款用于将结构化故事编写为JSON数据的桌面应用程序
 |------|------|
 | Windows | `.exe` 安装程序 / 便携版 |
 
-## 游戏引擎集成计划
+## 内置工具模板与导出目标
 
-| 引擎 | 状态 |
-|------|------|
-| RPG Maker MV/MZ | 计划中 |
-| Ren'Py | 计划中 |
-| Ink (Unity) | 计划中 |
-| Yarn Spinner (Unity) | 计划中 |
+| 工具 | 模板 | 导出 |
+|------|------|------|
+| Ren'Py | 内置 | `.rpy` |
+| Ink | 内置 | `.ink` |
+| Yarn Spinner | 内置 | `.yarn` |
+| Dialogic 2 | 内置 | `.dtl` |
+| Naninovel | 内置 | `.nani` |
 
 ## 反馈与社区
 

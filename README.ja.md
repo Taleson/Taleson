@@ -6,7 +6,7 @@
 
 コーディング不要。ストーリーを書いて、シーンをつなげて、エクスポート。
 
-[![デモダウンロード](https://img.shields.io/badge/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![デモダウンロード](https://img.shields.io/badge/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-Demo%20v1.0.4-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
 [![Steam](https://img.shields.io/badge/%E3%82%A6%E3%82%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%83%AA%E3%82%B9%E3%83%88-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
 [![ライセンス](https://img.shields.io/badge/%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9-All%20Rights%20Reserved-red?style=for-the-badge)](#ライセンス)
 
@@ -46,7 +46,7 @@ Talesonは、JSONデータとして構造化されたストーリーを作成す
 |--------|------|-----------|
 | **Array** | 線形・順次ノード | シンプルなスクリプト、チュートリアル |
 | **Graph** | 分岐ノードツリー | RPGダイアログ、選択肢ベースのナラティブ |
-| **Graph-Inline** | インライン子ノード付きグラフ | ビジュアルノベル、会話中心のストーリー |
+| **Graph-Inline** | ノードの台詞を軸に、選択肢へインライン反応を重ねる構造 | ビジュアルノベル、会話中心のストーリー |
 
 ### エディタ
 
@@ -59,14 +59,17 @@ Talesonは、JSONデータとして構造化されたストーリーを作成す
 
 ### エクスポート
 
-- HTMLエクスポート（スタンドアロン閲覧用）
-- JSONデータ（ゲームエンジン連携用）
+- ゲームスクリプト書き出し: Ren'Py (`.rpy`)、Ink (`.ink`)、Yarn Spinner (`.yarn`)、Dialogic 2 (`.dtl`)、Naninovel (`.nani`)
+- ドキュメント書き出し: HTML、Markdown、Word (`.docx`)、Excel (`.xlsx`)
+- JSONデータ（ゲームエンジン連携やカスタムパイプライン向け）
 
 ### AI連携（MCP）
 
 - 内蔵MCP（Model Context Protocol）サーバー
 - AIエージェントがストーリーノードの読み取り、作成、編集に対応
-- 22以上のAIツールと互換（Claude、Cursor、Windsurf、Copilot、JetBrainsなど）
+- パッケージ版TalesonだけでローカルMCPサーバーを実行でき、別途Node.jsをインストールする必要はありません
+- 設定タブでクライアント別のMCP設定スニペットを生成でき、ポータブル実行ファイルのパス上書きにも対応
+- Claude Desktop、Cursor、VS Code (Copilot)、Windsurf、Google Antigravity、Claude Code、OpenAI Codex CLI、OpenAI Codex App、Gemini CLI 向けの設定ガイドを同梱
 
 ### 多言語対応
 
@@ -91,14 +94,15 @@ Talesonは、JSONデータとして構造化されたストーリーを作成す
 |-----------------|------|
 | Windows | `.exe` インストーラー / ポータブル |
 
-## ゲームエンジン連携予定
+## 同梱テンプレートと書き出し先
 
-| エンジン | ステータス |
-|----------|-----------|
-| RPG Maker MV/MZ | 予定 |
-| Ren'Py | 予定 |
-| Ink (Unity) | 予定 |
-| Yarn Spinner (Unity) | 予定 |
+| ツール | テンプレート | 書き出し |
+|--------|-----------|-----------|
+| Ren'Py | 同梱 | `.rpy` |
+| Ink | 同梱 | `.ink` |
+| Yarn Spinner | 同梱 | `.yarn` |
+| Dialogic 2 | 同梱 | `.dtl` |
+| Naninovel | 同梱 | `.nani` |
 
 ## フィードバック & コミュニティ
 

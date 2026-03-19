@@ -5,6 +5,23 @@ All notable changes to Taleson will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.4] - 2026-03-20
+
+### Added
+- Graph templates now include starter resource files for backgrounds, characters, items, and endings
+- Demo builds now warn before loading chapter data that exceeds demo limits
+
+### Changed
+- MCP setup guidance is now centered around packaged Taleson, with clearer client-specific instructions and portable path overrides
+- Graph-Inline templates now use a node-first dialogue flow, layering reaction dialogue, inline effects, and inline conditions onto choices
+- Windows demo builds now expose the correct app name, icon, and runtime version for packaged app and MCP usage
+
+### Fixed
+- MCP story creation and node tools now preserve string IDs and storage shape more consistently
+- Speaker, inline dialogue, and generic inline fields now resolve correctly in diagram, reader, compact outline, statistics, and export flows
+- Variable tab saving, scroll behavior, story column visibility, and localized labels are more reliable in longer editing sessions
+- Choice text normalization and deprecated expression-role handling were cleaned up in exports and templates
+
 ## [1.0.3] - 2026-03-11
 
 ### Fixed

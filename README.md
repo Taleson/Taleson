@@ -6,7 +6,7 @@
 
 No coding needed. Just write your story, connect the scenes, and export.
 
-[![Download Demo](https://img.shields.io/badge/Download-Demo%20v1.0.3-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
+[![Download Demo](https://img.shields.io/badge/Download-Demo%20v1.0.4-blue?style=for-the-badge)](https://github.com/Taleson/Taleson/releases/latest)
 [![Steam](https://img.shields.io/badge/Wishlist-Steam-000000?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/4507640/)
 [![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#license)
 
@@ -46,7 +46,7 @@ Every aspect of your project is **configuration-driven** -- column layouts, node
 |------|-------------|----------|
 | **Array** | Linear, sequential nodes | Simple scripts, tutorials |
 | **Graph** | Branching node tree with connections | RPG dialogues, choice-based narratives |
-| **Graph-Inline** | Graph with inline child nodes | Visual novels, conversation-heavy stories |
+| **Graph-Inline** | Node-first dialogue with inline reactions on choices | Visual novels, conversation-heavy stories |
 
 ### Editor
 
@@ -59,14 +59,17 @@ Every aspect of your project is **configuration-driven** -- column layouts, node
 
 ### Export
 
-- HTML export for standalone reading
-- JSON data for game engine integration
+- Game script export: Ren'Py (`.rpy`), Ink (`.ink`), Yarn Spinner (`.yarn`), Dialogic 2 (`.dtl`), Naninovel (`.nani`)
+- Document export: HTML, Markdown, Word (`.docx`), Excel (`.xlsx`)
+- JSON data for engine integration and custom pipelines
 
 ### AI Integration (MCP)
 
 - Built-in MCP (Model Context Protocol) server
 - AI agents can read, create, and modify story nodes
-- Compatible with 22+ AI tools (Claude, Cursor, Windsurf, Copilot, JetBrains, and more)
+- Packaged Taleson can be used as a local MCP server without requiring a separate Node.js install
+- Settings can generate client-specific MCP snippets and support portable executable path overrides
+- Curated setup guides are included for Claude Desktop, Cursor, VS Code (Copilot), Windsurf, Google Antigravity, Claude Code, OpenAI Codex CLI, OpenAI Codex App, and Gemini CLI
 
 ### Internationalization
 
@@ -91,14 +94,15 @@ Go to [**Releases**](https://github.com/Taleson/Taleson/releases/latest) to down
 |----------|--------|
 | Windows | `.exe` installer / portable |
 
-## Planned Engine Integrations
+## Included Tool Templates & Export Targets
 
-| Engine | Status |
-|--------|--------|
-| RPG Maker MV/MZ | Planned |
-| Ren'Py | Planned |
-| Ink (Unity) | Planned |
-| Yarn Spinner (Unity) | Planned |
+| Tool | Template | Export |
+|------|----------|--------|
+| Ren'Py | Included | `.rpy` |
+| Ink | Included | `.ink` |
+| Yarn Spinner | Included | `.yarn` |
+| Dialogic 2 | Included | `.dtl` |
+| Naninovel | Included | `.nani` |
 
 ## Feedback & Community
 
